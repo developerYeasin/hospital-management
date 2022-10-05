@@ -584,7 +584,7 @@
         </div>
         <div id="main-content main-content2 mt-0 ">
           <div class="container-fluid">
-            
+            <form action="#">
               <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                   <div class="card">
@@ -745,11 +745,12 @@
                         <div class="col-sm-12">
                           <div class="form-group m-t-20">
                           <label for="" class="w-100" >Present Disease Probably</label>
-                            <textarea
+                            <!-- <textarea
                               rows="6"
                               class="form-control"
                               placeholder="Disease Description"
-                            ></textarea>
+                            ></textarea> -->
+                            <textarea id="mytextarea">Hello, World!</textarea>
                           </div>
                         </div>
                       </div>
@@ -1194,6 +1195,8 @@
                   </div>
                 </div>
               </div>
+            </form>
+
           </div>
         </div>
       </div>
@@ -1213,5 +1216,19 @@
     <script src="assets/bundles/mainscripts.bundle.js"></script>
     <script src="assets/js/selector.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="https://cdn.tiny.cloud/1/e3ebhr21o0jn5id335cxsq5dzyv015uf4ogy5rdvrprz5dwu/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: '#mytextarea',
+        // plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect ',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | forecolor | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat ',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ]
+    });
+    </script>
   </body>
 </html>
