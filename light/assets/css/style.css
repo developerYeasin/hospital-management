@@ -147,3 +147,32 @@
   color: #01b2c6;
   background: transparent;
 }
+.basic-info, .info-wrap-border{
+  border: 6px solid #01b2c6;
+  padding: 10px;
+}
+.patient-profile-pic{}
+
+.patient-profile-pic .upload-pic{
+  border: 6px solid #01b2c6;
+  height: 278px;
+  position: relative;
+  cursor: pointer;
+}
+.patient-profile-pic .upload-pic input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.patient-profile-pic .upload-pic label{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
