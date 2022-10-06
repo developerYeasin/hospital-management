@@ -589,17 +589,33 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                   <div class="card">
                     <div class="header">
-                      <h2>
-                        Basic Information <small>Description text here...</small>
-                      </h2>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h2>
+                            Basic Information <small>Description text here...</small>
+                          </h2>
+
+                        </div>
+                        <div class="col-md-2 ml-auto">
+                          <div class="patient-profile-pic">
+                            <label for="upload-pic" class="w-100 " >Profile Picture:</label>
+                         <div class="upload-pic">
+                          <input type="file" id="upload-pic" class="dropify" />
+                          <label for="upload-pic">
+                             Click to Upload
+                          </label>
+                         </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="body">
                       <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                    <div class="basic-info">
                            
                     <div class="row ">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label for="" class=" w-100 " >Frist Name:</label>
                           <input
@@ -640,7 +656,7 @@
                         <div class="form-group">
                           <label for="" class="w-100 " >Age:</label>
                           <input
-                            type="text"
+                            type="date"
                             class="form-control"
                             placeholder="How old"
                           />
@@ -661,11 +677,11 @@
                       <div class="col-md-4">
                         <div class="form-group">
                           <label for="" class="w-100 " >profiession:</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="profiession"
-                          />
+                          <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
+                            <option>Farmer</option>
+                            <option>Worker</option>
+                            <option>Teasher</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-4">
@@ -733,21 +749,13 @@
                       
                    </div>
                         </div>
-                        <div class="col-md-4">
-                          <div class="patient-profile-pic">
-                            <label for="upload-pic" class="w-100 " >Profile Picture:</label>
-                         <div class="upload-pic">
-                          <input type="file" id="upload-pic" class="dropify" />
-                          <label for="upload-pic">
-                            Drug and Drop a pic or Click to Upload
-                          </label>
-                         </div>
-                          </div>
-                        </div>
+                      
                       </div>
                         
 
-                      <div class="row">
+
+                      <div class="info-wrap-border my-3">
+                      <div class="row clearfix">
                         <div class="col-sm-12">
                           <div class="form-group m-t-20">
                           <label for="" class="w-100" >Present Disease Probably</label>
@@ -755,7 +763,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="row">
+                      <div class="row clearfix">
                         <div class="col-sm-12">
                           <div class="form-group m-t-20">
                           <label for="" class="w-100" >Past Disease History</label>
@@ -770,7 +778,7 @@
                         </div>
                       </div>
 
-<div class="row">
+<div class="row clearfix">
  <div class="col-md-12"> <label for="">Family history</label></div>
  <div class="col-md-6">  
   <textarea id="mytextarea"     class="form-control"
@@ -791,9 +799,7 @@
 </div>
 
 
-
-<div class="info-wrap-border my-3">
-<div class="row mt-3">
+<div class="row clearfix mt-3">
   <div class="col-md-6">
     <div class="form-group">
       <label for="" class="w-100 " >Langushment:</label>
@@ -822,10 +828,11 @@
       </select>
     </div>
   </div>
+
 </div>
 
 
-<div class="row mt-3">
+<div class="row clearfix mt-3">
   <div class="col-md-4">
     <div class="form-group">
       <label for="" class="w-100 " >Bath:</label>
@@ -1105,205 +1112,144 @@
   </div>
 
 </div>
+
+
+
+<div class="row clearfix mt-3">
+  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
+      <textarea
+      id="mytextarea"
+   rows="6"
+   class="form-control"
+   placeholder="Mental Symptoms"
+ ></textarea></div>
+ </div>
+<div class="row clearfix mt-3 ">
+  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
+      <textarea
+      id="mytextarea"
+   rows="6"
+   class="form-control"
+   placeholder="Mental Symptoms"
+ ></textarea></div>
+ </div>
+<div class="row clearfix mt-3 ">
+  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
+      <textarea
+      id="mytextarea"
+   rows="6"
+   class="form-control"
+   placeholder="Mental Symptoms"
+ ></textarea></div>
+ </div>
+
 </div>
-
-
-<div class="row mt-3">
-  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
-      <textarea
-      id="mytextarea"
-   rows="6"
-   class="form-control"
-   placeholder="Mental Symptoms"
- ></textarea></div>
- </div>
-<div class="row mt-3 ">
-  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
-      <textarea
-      id="mytextarea"
-   rows="6"
-   class="form-control"
-   placeholder="Mental Symptoms"
- ></textarea></div>
- </div>
-<div class="row mt-3 ">
-  <div class="col-md-12"> <label for="">Mental Symptoms</label> 
-      <textarea
-      id="mytextarea"
-   rows="6"
-   class="form-control"
-   placeholder="Mental Symptoms"
- ></textarea></div>
- </div>
-
-
 
 
  <div class="info-wrap-border mt-3">
-
- 
-
-<div class="row mt-3">
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Date:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Date</option>
-        <option>Date2</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Remedy:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Thiek</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Power:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Dog</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Quantity:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
- 
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Preseribed by:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Comment:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-
-</div>
-<div class="row mt-3">
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Date:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Date</option>
-        <option>Date2</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Remedy:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Thiek</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Power:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Dog</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Quantity:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
- 
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Preseribed by:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Comment:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-
-</div>
-<div class="row mt-3">
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Date:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Date</option>
-        <option>Date2</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Remedy:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Thiek</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Power:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Dog</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Quantity:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
- 
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Preseribed by:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="form-group">
-      <label for="" class="w-100 " >Comment:</label>
-      <select class="form-control js-example-tokenizer" multiple="multiple" placeholder="Marital Status" >
-        <option>Red</option>
-      </select>
-    </div>
-  </div>
-
-</div>
+  <div class="table-responsive table_middel">
+    <table class="table m-b-0">
+      <thead class="thead-dark">
+        <tr>
+          <th>Date</th>
+          <th>Remedy</th>
+          <th>Power</th>
+          <th>Quantity</th>
+          <th>Prescribed By</th>
+          <th>Commnet</th>
+          
 
 
+
+
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>22 oct, 2022</td>
+        
+          <td>
+            Canthris
+          </td>
+          <td>200</td>
+          <td>2 Bottle</td>
+          <td>
+          <div class="d-flex justify-content-start align-items-center ">
+            <div class="">
+              <img
+              src="../assets/images/xs/avatar3.jpg"
+              class="rounded-circle width30 m-r-15"
+              alt="profile-image"
+            />
+             </div>
+             <div class="">
+              <span>Dr. Aman</span><br/>
+              <span>Ph:019283-79273</span>
+             </div>
+          </div>
+          </td>
+          <td>
+            Severe headache
+          </td>
+        </tr>
+        <tr>
+          <td>22 oct, 2022</td>
+        
+          <td>
+            Canthris
+          </td>
+          <td>200</td>
+          <td>2 Bottle</td>
+          <td>
+          <div class="d-flex justify-content-start align-items-center ">
+            <div class="">
+              <img
+              src="../assets/images/xs/avatar3.jpg"
+              class="rounded-circle width30 m-r-15"
+              alt="profile-image"
+            />
+             </div>
+             <div class="">
+              <span>Dr. Aman</span><br/>
+              <span>Ph:019283-79273</span>
+             </div>
+          </div>
+          </td>
+          <td>
+            Severe headache
+          </td>
+        </tr>
+        <tr>
+          <td>22 oct, 2022</td>
+        
+          <td>
+            Canthris
+          </td>
+          <td>200</td>
+          <td>2 Bottle</td>
+          <td>
+          <div class="d-flex justify-content-start align-items-center ">
+            <div class="">
+              <img
+              src="../assets/images/xs/avatar3.jpg"
+              class="rounded-circle width30 m-r-15"
+              alt="profile-image"
+            />
+             </div>
+             <div class="">
+              <span>Dr. Aman</span><br/>
+              <span>Ph:019283-79273</span>
+             </div>
+          </div>
+          </td>
+          <td>
+            Severe headache
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 </div>
 
