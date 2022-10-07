@@ -147,6 +147,20 @@
   color: #01b2c6;
   background: transparent;
 }
+.from-save-button .btn-darft {
+  background-color: transparent;
+  border: 1px solid #01b2c6;
+  color: #01b2c6;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.4s ease-in-out;
+}
+.from-save-button .btn-darft:hover {
+  color: #fff;
+  background: #01b2c6;
+}
+
+
 .basic-info, .info-wrap-border{
   border: 6px solid #01b2c6;
   padding: 10px;
