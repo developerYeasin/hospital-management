@@ -101,6 +101,10 @@
   margin: 0 4px;
   color: #111;
 }
+.user-id{
+  font-size: 20px;
+}
+
 #left-sidebar {
   position: relative !important;
   height: 100vh;
@@ -190,6 +194,14 @@
   text-align: center;
   cursor: pointer;
 }
+.total-patient-conter{
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.table-select-content{
+  width: 100px;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar{
@@ -225,5 +237,54 @@
 }
 .navbar-brand i {
   font-size: 22px;
+}
+}
+
+@media (max-width: 768px) {
+  #top_counter .icon i {
+    font-size: 6px !important;
+}
+.banner-title h1 {
+  font-size: 10px;
+  padding: 4px 4px;
+}
+.banner-social-link {
+  padding: 0px 0px;
+  width: 90px;
+}
+.banner-social-link ul li a {
+  font-size: 13px;
+  margin: 0 0px;
+}
+.card .header {
+  padding: 4px;
+}
+.card .body {
+  padding: 4px;
+}
+.patient-profile-pic .upload-pic {
+  width: 57%;
+  margin: auto;
+  margin-top: 17px;
+}
+}
+
+@media (max-width: 560px) {
+  .user-id{
+    font-size: 16px;
+  }
+  #top_counter .text {
+    font-size: 7px;
+}
+#top_counter .number {
+  font-size: 7px;
+}
+.from-save-button button {
+  padding: 3px 6px;
+  font-size: 12px;
+}
+.from-save-button .btn-darft {
+  padding: 3px 6px;
+  font-size: 12px;
 }
 }
