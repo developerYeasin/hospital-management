@@ -210,8 +210,15 @@
     position: fixed !important;
     top: 0;
     left: -250px !important; 
-    margin-top: 74px !important;
+    margin-top: 45px !important;
   }  
+  .navbar {
+    height: 45px;
+  }
+  #banner {
+    margin-top: 45px;
+    height: 250px;
+  }
 }
 
 
@@ -240,11 +247,12 @@
 .navbar-brand i {
   font-size: 22px;
 }
+
 }
 
 @media (max-width: 768px) {
   #top_counter .icon i {
-    font-size: 6px !important;
+    font-size: 10px !important;
 }
 .banner-title h1 {
   font-size: 10px;
@@ -264,11 +272,7 @@
 .card .body {
   padding: 4px;
 }
-.patient-profile-pic .upload-pic {
-  width: 57%;
-  margin: auto;
-  margin-top: 17px;
-}
+
 }
 
 @media (max-width: 560px) {
