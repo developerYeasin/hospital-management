@@ -9,11 +9,50 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 9;
 }
 
 #banner::after{
   position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  z-index: -1;
 }
+.change-cover{
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.change-cover input{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.change-cover label {
+  background: #fff;
+  color: #111;
+  border-radius: 4px;
+  padding: 6px 9px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+#banner:hover .change-cover{
+opacity: 1;
+}
+
+
 
 #top_counter .icon i {
   font-size: 33px;
@@ -29,13 +68,13 @@
   position: absolute;
   bottom: 0%;
   left: 0%;
-  background-color: #fff;
 }
 .banner-title h1 {
-  color: #000;
+  color: #fff;
   font-size: 30px;
   text-transform: capitalize;
   padding: 10px 10px;
+  font-weight: 600;
 }
 /* .banner-title h1 span {
 } */
@@ -79,9 +118,21 @@
   transition: all 0.4s ease-in-out;
 }
 
+
+
 .banner-profile:hover button {
   opacity: 1;
   visibility: visible;
+}
+
+.banner-profile button input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .banner-social-link {
