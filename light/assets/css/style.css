@@ -11,6 +11,10 @@
   position: relative;
 }
 
+#banner::after{
+  position: absolute;
+}
+
 #top_counter .icon i {
   font-size: 33px;
 }
