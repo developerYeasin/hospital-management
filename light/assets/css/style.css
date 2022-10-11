@@ -51,7 +51,9 @@
 #banner:hover .change-cover{
 opacity: 1;
 }
-
+.sidebar-nav .metismenu>li a {
+  text-transform: capitalize;
+}
 
 
 #top_counter .icon i {
@@ -162,8 +164,10 @@ opacity: 1;
 
 #left-sidebar {
   position: relative !important;
-  height: 100vh;
+  /* height: 100vh; */
 }
+
+
 
 .main-content {
   position: relative;
@@ -226,7 +230,6 @@ opacity: 1;
   border: 6px solid #01b2c6;
   padding: 10px;
 }
-.patient-profile-pic{}
 
 .patient-profile-pic .upload-pic{
   border: 6px solid #01b2c6;
@@ -258,6 +261,68 @@ opacity: 1;
 
 .table-select-content{
   width: 100px;
+}
+
+.chamber-and-online-patient{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.carousel-item .main-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0;
+}
+.patient-counter .content {
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carousel-item .content h5{}
+
+.patient-report{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.patient-report h3{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0;
+}
+.patient-report div{}
+.patient-report div h4{}
+
+.patient-table-filter-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47%;
+  margin: auto;
+}
+.patient-table-filter-btn button {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #111;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 10px 19px;
+}
+
+.patient-table-search-input{
+  width: 47%;
+  margin: 20px auto;
+
+}
+.patient-table-search-input input{
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
