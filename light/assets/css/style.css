@@ -316,17 +316,31 @@ opacity: 1;
 }
 
 .patient-table-search-input{
-  width: 47%;
+  width: 50%;
   margin: 20px auto;
-
+  display: flex;
+  background: #fff;
 }
 .patient-table-search-input input{
-  width: 100%;
+  width: 65%;
   padding: 10px 14px;
   border-radius: 0;
   border: 1px solid #fff;
   font-size: 17px;
   font-weight: 500;
+}
+.patient-table-search-input input:focus{
+  outline: none;
+}
+.patient-table-search-input select{
+  width: 35%;
+  padding: 10px 14px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-weight: 500;}
+.patient-table-search-input select:focus{
+  outline: none;
 }
 
 .date-selector{
