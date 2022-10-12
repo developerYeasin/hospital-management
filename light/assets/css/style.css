@@ -275,7 +275,6 @@ opacity: 1;
   margin-bottom: 0;
 }
 .patient-counter .content {
-  height: 78px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -334,7 +333,6 @@ opacity: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 30px;
 }
 /* .date-selector div{} */
 .date-selector div label{
