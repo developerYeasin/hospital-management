@@ -291,9 +291,14 @@ opacity: 1;
   justify-content: start;
   align-items: center;
   margin-bottom: 0;
+  font-size: 20px;
 }
 .patient-report div{}
-.patient-report div h4{}
+.patient-report select{
+  font-size: 18px;
+  padding: 2px 9px;
+  border-radius: 13px;
+  border: 1px solid #d5d5d5;}
 
 .patient-table-filter-btn{
   display: flex;
@@ -323,6 +328,28 @@ opacity: 1;
   border: 1px solid #fff;
   font-size: 17px;
   font-weight: 500;
+}
+
+.date-selector{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* .date-selector div{} */
+.date-selector div label{
+  width: 100%;
+}
+.date-selector div input{
+  border-radius: 0;
+  border: 1px solid #dbdbdb;
+  padding: 2px 14px;
+  color: #686868;
+  width: 100%;
+  font-size: 14px;
+}
+.date-selector p{ 
+  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {

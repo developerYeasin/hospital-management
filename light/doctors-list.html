@@ -44,8 +44,8 @@
     />
     <link rel="stylesheet" href="../assets/vendor/toastr/toastr.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="assets/css/calendar/style.css" />
-    <link rel="stylesheet" href="assets/css/calendar/theme.css" /> -->
+    <link rel="stylesheet" href="assets/css/calendar/style.css" />
+    <link rel="stylesheet" href="assets/css/calendar/theme.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/color_skins.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -653,33 +653,21 @@
                         <div class="body">
                             <div class="patient-report">
                                 <h3>Patient Report</h3>
-                                <select class="">
-                                    <option>All</option>
-                                    <option>Chamber</option>
-                                    <option>Online</option>
-                                </select>
+                                <div class="">
+                                    <h4>All</h4>
+                                    <h4>Chamber</h4>
+                                    <h4>Online</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
               </div>
               <div class="row">
-
                 <div class="col-md-6">
-                  <div class="date-selector">
-                    <div class="">
-                      <label for="start-date">Start</label>
-                      <input type="date" id="start-date" >
-                    </div>
-                    <p>To</p>
-                    <div class="">
-                      <label for="end-date">End</label>
-                      <input type="date" id="end-date" >
-                    </div>
-                  </div>
-                    <!-- <div class="calendar-container calendar-wrapper" id="calendar-wrapper" ></div> -->
+                    <div class="calendar-container calendar-wrapper" id="calendar-wrapper" ></div>
                 </div>
-                <!-- <div class="col-md-6"> <div class="calendar-container calendar-wrapper" id="calendar-wrapper" ></div></div> -->
+                <div class="col-md-6"> <div class="calendar-container calendar-wrapper" id="calendar-wrapper" ></div></div>
               </div>
               <div class="row">
              <div class="col-sm-12">
@@ -796,7 +784,7 @@
     <script src="../assets/vendor/toastr/toastr.js"></script>
     <script src="../assets/vendor/flot-charts/jquery.flot.selection.js"></script>
     <script src="assets/bundles/mainscripts.bundle.js"></script>
-    <!-- <script src="assets/js/calendar.min.js"></script> -->
+    <script src="assets/js/calendar.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
