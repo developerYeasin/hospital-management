@@ -364,6 +364,11 @@ opacity: 1;
   margin-bottom: 0;
 }
 
+.view-icon{
+  font-size: 22px;
+  color: #111;
+}
+
 @media (max-width: 1200px) {
   #left-sidebar{
     position: fixed !important;
