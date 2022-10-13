@@ -296,17 +296,17 @@
                     </li>
                     <li class=""><a href="patient-list.html"><i class="fa-solid fa-list"></i><span>patient list</span></a</li>
                     <li class="active"><a href="send-case-form.html"><i class="fa-solid fa-share-from-square"></i><span>send case form</span></a</li>
-                    <li class=""><a href="doctors-list.html"><i class="fa-brands fa-get-pocket"></i><span>received case form</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-circle-half-stroke"></i><span>Darf</span></a</li>
+                    <li class=""><a href="received-case-form.html"><i class="fa-brands fa-get-pocket"></i><span>received case form</span></a</li>
+                    <li class=""><a href="create-new-patient-darf.html"><i class="fa-solid fa-circle-half-stroke"></i><span>Darf</span></a</li>
                     <li class=""><a href="doctors-list.html"><i class="fa-solid fa-user-doctor"></i><span>doctor list</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-comment-dots"></i><span>doctor chat list</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-hospital-user"></i><span>petient chat list</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-sharp fa-solid fa-file-invoice-dollar"></i><span>bill info</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-money-bill-1-wave"></i><span>payment withrow</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-address-card"></i><span>profile</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-lock"></i><span>change password</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-temperature-arrow-up"></i><span>terms & condition</span></a</li>
-                    <li class=""><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i><span>logout</span></a</li>
+                    <li class=""><a href="doctor-chat-list.html"><i class="fa-solid fa-comment-dots"></i><span>doctor chat list</span></a</li>
+                    <li class=""><a href="patient-chat-list.html"><i class="fa-solid fa-hospital-user"></i><span>petient chat list</span></a</li>
+                    <li class=""><a href="bill-info.html"><i class="fa-sharp fa-solid fa-file-invoice-dollar"></i><span>bill info</span></a</li>
+                    <li class=""><a href="payment-withrow.html"><i class="fa-solid fa-money-bill-1-wave"></i><span>payment withrow</span></a</li>
+                    <li class=""><a href="profile.html"><i class="fa-solid fa-address-card"></i><span>profile</span></a</li>
+                    <li class=""><a href="change-passowrd.html"><i class="fa-solid fa-lock"></i><span>change password</span></a</li>
+                    <li class=""><a href="terms-condition.html"><i class="fa-solid fa-temperature-arrow-up"></i><span>terms & condition</span></a</li>
+                    <li class=""><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i><span>logout</span></a</li>
                   </ul>
                 </nav>
               </div>
@@ -615,87 +615,174 @@
         <div id="main-content main-content2 mt-0 ">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-6">
-                <table class="table mb-3 table-hover text-center ">
-                  <thead class="thead-dark">
-                  <tr>
-                      <th>Year</th>
-                      <th>Total Patient</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>2020</td>
-                    <td>4210</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div class="col-md-6">
-                <table class="table mb-3 table-hover text-center ">
-                  <thead class="thead-dark">
-                  <tr>
-                      <th>Month</th>
-                      <th>Total Patient</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>January</td>
-                    <td>4210</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-              <div class="col-md-6">
-                <table class="table mb-3 table-hover text-center ">
-                  <thead class="thead-dark">
-                  <tr>
-                      <th>Date</th>
-                      <th>Total Patient</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>31-Jan-2022</td>
-                    <td>4210</td>
-                  </tr>
-                  </tbody>
-                  </table>
-              </div>
-            </div>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <div class="card patient-counter">
-                    <div class="body">
-
-                      <div class="chamber-and-online-patient">
-                        <h4 class=" main-title ">Dr visit fee </h4>
-                    <div class="content">
-                      <div
-                        id="top_counter1"
-                        class="carousel vert slide"
-                        data-ride="carousel"
-                        data-interval="2500"
-                      >
-                        <div class="carousel-inner ">
-                          <div class="carousel-item active">
-                          
-                            <h5>This Month - 700</h5>
-                          </div>
-                          <div class="carousel-item">
-                            <h5>Due Amount - 300</h5>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card patient-counter">
+                      <div class="body py-3 px-4 ">
+    
+                        <div class="chamber-and-online-patient">
+                          <h4 class=" main-title ">Dr visit fee </h4>
+                      <div class="content">
+                        <div
+                          id="top_counter1"
+                          class="carousel vert slide"
+                          data-ride="carousel"
+                          data-interval="2500"
+                        >
+                          <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                            
+                              <h5>This Month - 700</h5>
+                            </div>
+                            <div class="carousel-item">
+                              <h5>Due Amount - 300</h5>
+                            </div>
                           </div>
                         </div>
                       </div>
+                  </div>
+                  <div class="card-text">
+                    <p class="mb-0" >You have left 3 days Please pay
+                      Your Doctor visit fee</p>
+                  </div>
+                      </div>
+                     
                     </div>
-                </div>
+                    <div class="card">
+                      <div class="body">
+                      <div class="d-flex pb-2 mb-3 border-buttom justify-content-start align-items-center ">
+
+
+                        <div class="">
+                          <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15" alt="profile-image">
+                         </div>
+                         <div class="">
+                          <span>Dr. Aman</span><br>
+                          <span>Ph:019283-79273</span><br>
+                          <span>Dhaka, Bd</span>
+                         </div>
+<div class="ml-auto">
+  Total-200 
+</div>
+
+                      </div>
+                      <div class="d-flex pb-2 mb-3 border-buttom justify-content-start align-items-center ">
+
+
+                        <div class="">
+                          <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15" alt="profile-image">
+                         </div>
+                         <div class="">
+                          <span>Dr. Aman</span><br>
+                          <span>Ph:019283-79273</span><br>
+                          <span>Dhaka, Bd</span>
+                         </div>
+<div class="ml-auto">
+  Total-200 
+</div>
+
+                      </div>
+                    </div>
+
                     </div>
                   </div>
+                  <div class="col-md-6">
+    
+                    <table class="table mb-3 table-hover text-center ">
+                      <thead class="thead-dark">
+                      <tr>
+                          <th>Year</th>
+                          <th>Total Patient</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>2020</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>2020</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>2020</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>2020</td>
+                        <td>4210</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                    <table class="table mb-3 table-hover text-center ">
+                      <thead class="thead-dark">
+                      <tr>
+                          <th>Month</th>
+                          <th>Total Patient</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>January</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>4210</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                    <table class="table mb-3 table-hover text-center ">
+                      <thead class="thead-dark">
+                      <tr>
+                          <th>Date</th>
+                          <th>Total Patient</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      <tr>
+                        <td>31-Jan-2022</td>
+                        <td>4210</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                  </div>
                 </div>
-
               </div>
-              <div class="row">
+
                 <div class="col-md-6 m-auto">
                     <div class="card mb-0">
                         <div class="body p-0 py-1 ">
