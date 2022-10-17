@@ -267,7 +267,14 @@ opacity: 1;
   display: grid;
   grid-template-columns: 60% 40%;
 }
-
+.chamber-and-online-patient h4, .net-income-details h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.chamber-and-online-patient h5, .net-income-details h5 {
+  font-size: 17px;
+  font-weight: 400;
+}
 .carousel-item .main-title {
   display: flex;
   justify-content: start;
@@ -362,6 +369,7 @@ opacity: 1;
 }
 .date-selector p{ 
   margin-bottom: 0;
+  margin-top: 27px;
 }
 
 .view-icon{
@@ -376,9 +384,14 @@ opacity: 1;
 .theme-cyan .sidebar-nav .metismenu>li.active>a{
   color: #01b2c6;
 }
-.net-income{
-  display: grid;
-  grid-template-columns: 75% 25%;
+
+.commision-details{
+  padding: 0;
+  margin: 0;
+}
+.commision-details li h5{}
+.commision-details li p{
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -447,7 +460,9 @@ opacity: 1;
 .card .body {
   padding: 4px;
 }
-
+.patient-table-search-input {
+  width: 100%;
+}
 }
 
 @media (max-width: 560px) {
@@ -479,5 +494,41 @@ opacity: 1;
 padding: 0 0;
 width: 80px;
 height: 80px;
+}
+.date-selector {
+  display: block;
+  padding: 16px 14px;
+}
+.date-selector p {
+  margin-top: 20px;
+  text-align: center;
+}
+.patient-table-search-input input {
+  font-size: 10px;
+  font-weight: 400;
+}
+.patient-table-search-input select {
+  font-size: 8px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.chamber-and-online-patient {
+  display: block;
+}
+.net-income-details h4 {
+  font-size: 14px;
+}
+.net-income-details h5 {
+  font-size: 12px;
+}
+.commision-title{
+  font-size: 18px;
+}
+.commision-details li h5 {
+  font-size: 10px;
+}
+.commision-details li p {
+  font-size: 10px;
+  margin-bottom: 0;
 }
 }
