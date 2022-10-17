@@ -376,6 +376,10 @@ opacity: 1;
 .theme-cyan .sidebar-nav .metismenu>li.active>a{
   color: #01b2c6;
 }
+.net-income{
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar{
