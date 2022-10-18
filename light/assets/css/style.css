@@ -262,10 +262,12 @@ opacity: 1;
 .table-select-content{
   width: 100px;
 }
-
+.net-income-details .content{
+  width: 50%;
+}
 .chamber-and-online-patient{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 30% 40%;
 }
 .chamber-and-online-patient h4, .net-income-details h4 {
   font-size: 20px;
@@ -393,6 +395,28 @@ opacity: 1;
 .commision-details li p{
   font-size: 20px;
 }
+.chat-app-btn{
+  position: absolute;
+  top: 21px;
+  right: 12px;
+  padding: 0;
+  background: transparent;
+  font-size: 19px !important;
+  z-index: 9;
+}
+.chat-app-btn:active{
+  outline: none;
+}
+.chat-app-btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+
+.chat-app .people-list.active {
+  left: 0px !important;
+  display: block !important;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar{
@@ -462,6 +486,9 @@ opacity: 1;
 }
 .patient-table-search-input {
   width: 100%;
+}
+.chat-app .people-list {
+  padding-top: 64px !important;
 }
 }
 

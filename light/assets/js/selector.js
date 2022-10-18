@@ -4,3 +4,6 @@ $(".js-example-tokenizer").select2({
   tokenSeparators: [",", " "],
 });
   
+
+
+

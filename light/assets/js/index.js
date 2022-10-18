@@ -1,3 +1,23 @@
+
+
+//chat app tap
+
+const plist = document.getElementById('plist');
+
+  const chatBtn = document.getElementById('chat-member-tap');
+  console.log(chatBtn);
+
+
+function openChatApp() {
+    console.log('ami')
+    plist.classList.toggle("active");
+}
+
+  chatBtn.addEventListener("click",openChatApp)
+
+
+
+
 $(function () {
   "use strict";
   $(".knob2").knob({ draw: function () {} });
@@ -201,24 +221,5 @@ $(function () {
   $("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
 });
 
-$('.calendar-wrapper').calendar();
 
-function selectDate(date) {
-  $('#calendar-wrapper').updateCalendarOptions({
-    date: date
-  });
-  console.log(calendar.getSelectedDate());
-}
 
-var defaultConfig = {
-  weekDayLength: 1,
-  date: '08/05/2021',
-  onClickDate: selectDate,
-  showYearDropdown: true,
-  startOnMonday: false,
-};
-
-var calendar = $('#calendar-wrapper').calendar(defaultConfig);
-console.log(calendar.getSelectedDate());
-
-  
