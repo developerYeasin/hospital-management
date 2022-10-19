@@ -425,6 +425,39 @@ opacity: 1;
   left: 0px !important;
   display: block !important;
 }
+.offcanvas-active #left-sidebar{
+  left: 5px !important; 
+}
+
+.payment-type{
+  font-size: 17px;
+}
+.payment-type span{
+  font-size: 15px;
+  margin-left: 10px;
+}
+.select-paymet-method{}
+.select-paymet-method label{}
+.select-paymet-method select{
+  border: none;
+  margin-left: 10px;
+}
+.select-paymet-method select:focus{
+outline: none;
+}
+
+.details-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.details-list li{
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+}
+.details-list li span{}
+
 
 @media (max-width: 1200px) {
   #left-sidebar{
@@ -439,11 +472,6 @@ opacity: 1;
   #banner {
     margin-top: 45px;
   }
-}
-
-
-.offcanvas-active #left-sidebar{
-  left: 5px !important; 
 }
 
 @media (max-width: 991px) {
