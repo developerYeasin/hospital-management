@@ -1,3 +1,4 @@
+
 .navbar {
   height: 74px;
 }
@@ -55,6 +56,15 @@ opacity: 1;
   text-transform: capitalize;
 }
 
+.main-content{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main-content2 {
+  height: 100vh !important;
+  overflow-y: auto;
+}
 
 #top_counter .icon i {
   font-size: 33px;
@@ -164,16 +174,11 @@ opacity: 1;
 
 #left-sidebar {
   position: relative !important;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 
 
-.main-content {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 .theme-cyan:before,
 .theme-cyan:after {
   left: 0;
@@ -261,6 +266,9 @@ opacity: 1;
 
 .table-select-content{
   width: 100px;
+}
+.net-income-details a{
+  color: inherit;
 }
 .net-income-details .content{
   width: 50%;
