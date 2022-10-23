@@ -470,6 +470,51 @@ outline: none;
   width: 100%;
   height: 100%;
 }
+.profile-contact-info{
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  border: 1px solid #01b2c6;
+  margin: 0;
+  padding: 0;
+}
+.contact-information{
+  border-right: 1px solid #01b2c6;
+  border-left: 1px solid #01b2c6;
+}
+.contact-info-title{
+  border-bottom: 1px solid #01b2c6;
+}
+.contact-information ul{
+  padding: 10px 20px;
+}
+.contact-info-title h4{
+  padding: 5px 20px;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+.terms-list li{
+  display: grid;
+  grid-template-columns: 20px 80%;
+  column-gap: 10px;
+  margin: 10px 0;
+}
+.terms-list li i{
+  color: #01b2c6;
+  font-size: 20px;
+}
+.terms-list li p{
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #111;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar{
@@ -537,6 +582,9 @@ outline: none;
 }
 .chat-app .people-list {
   padding-top: 64px !important;
+}
+.profile-contact-info{
+  display: block;
 }
 }
 
