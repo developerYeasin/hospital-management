@@ -515,6 +515,9 @@ outline: none;
   font-weight: 500;
   color: #111;
 }
+div#left-sidebar {
+  padding-bottom: 30px;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar{
