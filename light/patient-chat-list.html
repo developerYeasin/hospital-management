@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/color_skins.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/chatapp.css">
   </head>
   <body class="theme-cyan">
     <div class="page-loader-wrapper">
@@ -300,8 +302,8 @@
                     <li class=""><a href="create-new-patient-darf.html"><i class="fa-solid fa-circle-half-stroke"></i><span>Darf</span></a</li>
                     <li class=""><a href="doctors-list.html"><i class="fa-solid fa-user-doctor"></i><span>doctor list</span></a</li>
                     <li class=""><a href="doctor-chat-list.html"><i class="fa-solid fa-comment-dots"></i><span>doctor chat list</span></a</li>
-                    <li class=""><a href="patient-chat-list.html"><i class="fa-solid fa-hospital-user"></i><span>petient chat list</span></a</li>
-                    <li class="active"><a href="bill-info.html"><i class="fa-sharp fa-solid fa-file-invoice-dollar"></i><span>bill info</span></a</li>
+                    <li class="active"><a href="patient-chat-list.html"><i class="fa-solid fa-hospital-user"></i><span>petient chat list</span></a</li>
+                    <li class=""><a href="bill-info.html"><i class="fa-sharp fa-solid fa-file-invoice-dollar"></i><span>bill info</span></a</li>
                     <li class=""><a href="payment-withrow.html"><i class="fa-solid fa-money-bill-1-wave"></i><span>payment withrow</span></a</li>
                     <li class=""><a href="profile.html"><i class="fa-solid fa-address-card"></i><span>profile</span></a</li>
                     <li class=""><a href="change-passowrd.html"><i class="fa-solid fa-lock"></i><span>change password</span></a</li>
@@ -614,88 +616,118 @@
         </div>
         <div id="main-content main-content2 mt-0 " class="main-content2" >
           <div class="container-fluid">
-            <div class="row">
-                      <div class="col-md-6 m-auto"> 
-                        <div class="table-card-title mb-3">
-                          <h4>Received case form history of : January-2021</h4>
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                <div class="card chat-app">
+                  <button id="chat-member-tap" class="btn chat-app-btn" ><i class="fa-solid fa-bars"></i></button>
+                        <div id="plist" class="people-list">
+                      <div class="input-group">
+                      <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                      <ul class="list-unstyled chat-list mt-2 mb-0">
+                      <li class="clearfix">
+                      <img src="../assets/images/xs/avatar1.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Vincent Porter</div>
+                      <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>
+                      </div>
+                      </li>
+                      <li class="clearfix active">
+                      <img src="../assets/images/xs/avatar2.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Aiden Chavez</div>
+                      <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                      </div>
+                      </li>
+                      <li class="clearfix">
+                      <img src="../assets/images/xs/avatar3.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Mike Bing</div>
+                      <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                      </div>
+                      </li>
+                      <li class="clearfix">
+                      <img src="../assets/images/xs/avatar7.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Christian Kelly</div>
+                      <div class="status"> <i class="fa fa-circle offline"></i> left 10 hours ago </div>
+                      </div>
+                      </li>
+                      <li class="clearfix">
+                      <img src="../assets/images/xs/avatar8.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Monica Ward</div>
+                      <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                      </div>
+                      </li>
+                      <li class="clearfix">
+                      <img src="../assets/images/xs/avatar9.jpg" alt="avatar" />
+                      <div class="about">
+                      <div class="name">Dr. Dean Henry</div>
+                      <div class="status"> <i class="fa fa-circle offline"></i> offline since Oct 28 </div>
+                      </div>
+                      </li>
+                      </ul>
                         </div>
-                      </div>
-                      <div class="col-md-6 ">
-                        <div class="patient-table-search-input w-100 my-0">
-                          <input type="text" placeholder="Search by Name/Phone/E-mail" >
-                          <select>
-                            <option value="">All</option>
-                            <option value="">Chamber Patient</option>
-                            <option value="">Online Patient</option>
-                          </select>
+                            <div class="chat">
+                          <div class="chat-header clearfix">
+                            <div class="row">
+                              <div class="col-lg-6">
+                              <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+                              <img src="../assets/images/xs/avatar2.jpg" alt="avatar" />
+                                    </a>
+                                <div class="chat-about">
+                                <h6 class="m-b-0">Dr. Aiden Chavez</h6>
+                                <small>Last  seen: 2 hours ago</small>
+                                    </div>
+                            </div>
+                    
+                        <!-- <div class="col-lg-6 hidden-sm text-right">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="icon-camera"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="icon-camcorder"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-info"><i class="icon-settings"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="icon-question"></i></a>
+                        </div> -->
                         </div>
-                      </div>
-                    <div class="col-md-12 mt-4 ">
-                      <div class="table-responsive table_middel">
-                      <table class="table mb-3 table-hover">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th>Date</th>
-                            <th>Patient</th>
-                            <th>Visit</th>
-                            <th>Commission</th>
-                            <th>Net Income</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td>23-jun-2022</td>
-                          <td>600</td>
-                          <td>1400</td>
-                          <td>40000</td>
-                          <td>100000</td>
-                        </tr>
-                        </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="table-card-title mb-3">
-                        <h4>Received case form history of : 23-January-2021</h4>
-                      </div>
-                      <div class="table-responsive table_middel">
-                      <table class="table mb-3 table-hover">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th>SL</th>
-                            <th>Sender</th>
-                            <th>Patient</th>
-                            <th>Visit</th>
-                            <th>Commission</th>
-                            <th>Net Income</th>
-                            <th>View</th>
-
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td><div class="d-flex justify-content-start align-items-center ">
-                            <div class="">
-                              <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15" alt="profile-image">
-                             </div>
-                             <div class="">
-                              <span>Dr. Aman</span><br>
-                              <span>Ph:019283-79273</span><br>
-                              <span>Dhaka, Bd</span>
-                             </div>
-                          </div></td>
-                          <td>1400</td>
-                          <td>40000</td>
-                          <td>100000</td>
-                          <td>100000</td>
-                          <td><a style="color: #111" class="m-auto d-block text-center "  href="sender-patient-details.html"><i class="fa-solid fa-eye"></i></a> </td>
-                        </tr>
-                        </tbody>
-                        </table>
-                      </div>
-                    </div>
-              </div>
+                </div>
+                <div class="chat-history">
+                <ul class="m-b-0">
+                <li class="clearfix">
+                <div class="message-data text-right">
+                <span class="message-data-time">10:10 AM, Today</span>
+                <img src="../assets/images/xs/avatar7.jpg" alt="avatar">
+                </div>
+                <div class="message other-message float-right"> Hi Aiden, how are you? How is the project coming along? </div>
+                </li>
+                <li class="clearfix">
+                <div class="message-data">
+                <span class="message-data-time">10:12 AM, Today</span>
+                </div>
+                <div class="message my-message">Are we meeting today?</div>
+                </li>
+                <li class="clearfix">
+                <div class="message-data">
+                <span class="message-data-time">10:15 AM, Today</span>
+                </div>
+                <div class="message my-message">Project has been already finished and I have results to show you.</div>
+                </li>
+                </ul>
+                </div>
+                <div class="chat-message clearfix">
+                <div class="input-group mb-0">
+                <div class="input-group-prepend">
+                <span class="input-group-text"><i class="icon-paper-plane"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter text here...">
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
           </div>
         </div>
       </div>
@@ -714,7 +746,6 @@
     <script src="../assets/vendor/toastr/toastr.js"></script>
     <script src="../assets/vendor/flot-charts/jquery.flot.selection.js"></script>
     <script src="assets/bundles/mainscripts.bundle.js"></script>
-    <!-- <script src="assets/js/calendar.min.js"></script> -->
     <script src="assets/js/index.js"></script>
   </body>
 </html>

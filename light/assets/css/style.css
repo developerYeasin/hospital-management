@@ -591,6 +591,10 @@ div#left-sidebar {
 }
 }
 
+.card-link:hover .body,.card-link:hover .card{
+color: #01b2c6;
+}
+
 @media (max-width: 560px) {
   .user-id{
     font-size: 16px;
