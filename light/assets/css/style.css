@@ -543,6 +543,7 @@ div#left-sidebar {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
